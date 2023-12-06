@@ -10,7 +10,7 @@ RSpec.describe Salary do
                 s.conta(25, 100, 5.50)
             end
 
-            linhas = saida.split("\n") #Corta o enter no final da entrada
+            linhas = saida.split("\n") #Corta a linha para gerar os dois valores
 
             #Executa as duas linhas
             expect(linhas[0]).to eq("NUMBER = 25")

@@ -2,11 +2,11 @@ require "./classes/beecrowd1"
 
 RSpec.describe Beecrowd1 do
 
-    describe'#helloWorld' do
+    describe'#hello_world' do
         it 'Executes a output with a string' do
             string = Beecrowd1.new
             resposta = capture_stdout do
-                string.helloWorld
+                string.hello_world
             end
             saida_final = resposta.split("\n")
 
@@ -14,11 +14,11 @@ RSpec.describe Beecrowd1 do
         end
     end
 
-    describe'#extremelyBasic' do
+    describe'#extremely_basic' do
         it 'calculates the sum of 10 and 9' do
             sum = Beecrowd1.new
             output = capture_stdout do
-                sum.extremelyBasic(10, 9)
+                sum.extremely_basic(10, 9)
             end
             final = output.split("\n")
 
@@ -28,7 +28,7 @@ RSpec.describe Beecrowd1 do
         it 'calculates the sum of -10 and 4' do
             sum = Beecrowd1.new
             output = capture_stdout do
-                sum.extremelyBasic(-10, 4)
+                sum.extremely_basic(-10, 4)
             end
             final = output.split("\n")
 
@@ -36,11 +36,11 @@ RSpec.describe Beecrowd1 do
         end
     end
 
-    describe '#areaOfACircle' do
+    describe '#area_of_a_circle' do
         it 'calculates the area of a circle with a radius of 2' do
             area = Beecrowd1.new
             output = capture_stdout do
-                area.areaOfACircle(2)
+                area.area_of_a_circle(2)
             end
             final = output.split("\n")
 
@@ -50,7 +50,7 @@ RSpec.describe Beecrowd1 do
         it 'calculates the area of a circle with a radius of 100.64' do
             area = Beecrowd1.new
             output = capture_stdout do
-                area.areaOfACircle(100.64)
+                area.area_of_a_circle(100.64)
             end
             final = output.split("\n")
 
@@ -58,11 +58,11 @@ RSpec.describe Beecrowd1 do
         end
     end
 
-    describe '#simpleSum' do
+    describe '#simple_sum' do
         it 'calculates a sum with 30 and 10' do
             soma = Beecrowd1.new
             output = capture_stdout do
-                soma.simpleSum(30, 10)
+                soma.simple_sum(30, 10)
             end
             final = output.split("\n")
 
@@ -72,7 +72,7 @@ RSpec.describe Beecrowd1 do
         it 'calculates a sum with -30 and 10' do
             soma = Beecrowd1.new
             output = capture_stdout do
-                soma.simpleSum(-30, 10)
+                soma.simple_sum(-30, 10)
             end
             final = output.split("\n")
 
@@ -80,11 +80,11 @@ RSpec.describe Beecrowd1 do
         end
     end
 
-    describe '#simpleProduct' do
+    describe '#simple_product' do
         it 'calculates the product between 3 and 9' do
             product = Beecrowd1.new
             output = capture_stdout do
-                product.simpleProduct(3, 9)
+                product.simple_product(3, 9)
             end
             final = output.split("\n")
 
@@ -94,7 +94,7 @@ RSpec.describe Beecrowd1 do
         it 'calculates the product between -30 and 10' do
             product = Beecrowd1.new
             output = capture_stdout do
-                product.simpleProduct(-30, 10)
+                product.simple_product(-30, 10)
             end
             final = output.split("\n")
 

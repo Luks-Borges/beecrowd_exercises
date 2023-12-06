@@ -1,13 +1,13 @@
-require './classes/beecrowd1008'
+require './classes/beecrowd2'
 
-RSpec.describe Salary do
-    describe '#conta' do
+RSpec.describe Beecrowd2 do
+    describe '#salary' do
         it "Executes the first block of tests" do
-            s = Salary.new
+            s = Beecrowd2.new
 
             #capture_stdout definido em spec_helper.rb
             saida = capture_stdout do
-                s.conta(25, 100, 5.50)
+                s.salary(25, 100, 5.50)
             end
 
             linhas = saida.split("\n") #Corta o enter no final da entrada
@@ -18,11 +18,11 @@ RSpec.describe Salary do
         end
 
         it "Executes the second block of tests" do
-            s = Salary.new
+            s = Beecrowd2.new
 
             #capture_stdout definido em spec_helper.rb
             saida = capture_stdout do
-                s.conta(1, 200, 20.50)
+                s.salary(1, 200, 20.50)
             end
 
             linhas = saida.split("\n") #Corta o enter no final da entrada
@@ -33,11 +33,11 @@ RSpec.describe Salary do
         end
 
         it "Executes the third block of tests" do
-            s = Salary.new
+            s = Beecrowd2.new
 
             #capture_stdout definido em spec_helper.rb
             saida = capture_stdout do
-                s.conta(6, 145, 15.55)
+                s.salary(6, 145, 15.55)
             end
 
             linhas = saida.split("\n") #Corta o enter no final da entrada
@@ -48,4 +48,5 @@ RSpec.describe Salary do
         end
     end
 end
+
 

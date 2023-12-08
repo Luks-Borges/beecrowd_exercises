@@ -1,4 +1,4 @@
-require './classes/beecrowd2'
+require './lib/classes/beecrowd2'
 
 RSpec.describe Beecrowd2 do
     describe '#salary' do

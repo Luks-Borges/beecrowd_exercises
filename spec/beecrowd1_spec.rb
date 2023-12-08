@@ -1,4 +1,4 @@
-require "./classes/beecrowd1"
+require "./lib/classes/beecrowd1"
 
 RSpec.describe Beecrowd1 do
 
